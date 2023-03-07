@@ -1,16 +1,10 @@
-# my_project
+# MY PROJECT
 
-A new Flutter project.
+## Menampilkan Jadwal Sholat Seluruh Indonesia
 
-## Getting Started
+- Menggunakan publik Api [lakuapik](https://github.com/lakuapik/jadwalsholatorg)
 
-This project is a starting point for a Flutter application.
+- State Management [Flutter_bloc](https://pub.dev/packages/flutter_bloc)
 
-A few resources to get you started if this is your first Flutter project:
+- Storage [Hydrated_bloc](https://pub.dev/packages/hydrated_bloc)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

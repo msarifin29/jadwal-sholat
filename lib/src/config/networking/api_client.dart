@@ -1,4 +1,4 @@
-// ignore_for_file: unused_import, body_might_complete_normally_catch_error
+// ignore_for_file: body_might_complete_normally_catch_error
 
 import 'dart:convert';
 
@@ -33,6 +33,45 @@ class ApiClient extends http.BaseClient {
       {Map<String, String>? headers, Object? body, Encoding? encoding}) {
     return super
         .post(url, headers: headers, body: body, encoding: encoding)
+        .then((value) {
+      debugPrint("${value.statusCode} ${value.body}");
+      return value;
+    }).catchError((err) {
+      debugPrint(err.toString());
+    });
+  }
+
+  @override
+  Future<http.Response> put(Uri url,
+      {Map<String, String>? headers, Object? body, Encoding? encoding}) {
+    return super
+        .put(url, headers: headers, body: body, encoding: encoding)
+        .then((value) {
+      debugPrint("${value.statusCode} ${value.body}");
+      return value;
+    }).catchError((err) {
+      debugPrint(err.toString());
+    });
+  }
+
+  @override
+  Future<http.Response> patch(Uri url,
+      {Map<String, String>? headers, Object? body, Encoding? encoding}) {
+    return super
+        .patch(url, headers: headers, body: body, encoding: encoding)
+        .then((value) {
+      debugPrint("${value.statusCode} ${value.body}");
+      return value;
+    }).catchError((err) {
+      debugPrint(err.toString());
+    });
+  }
+
+  @override
+  Future<http.Response> delete(Uri url,
+      {Map<String, String>? headers, Object? body, Encoding? encoding}) {
+    return super
+        .delete(url, headers: headers, body: body, encoding: encoding)
         .then((value) {
       debugPrint("${value.statusCode} ${value.body}");
       return value;

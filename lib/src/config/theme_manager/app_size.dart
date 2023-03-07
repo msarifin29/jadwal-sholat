@@ -15,6 +15,19 @@ class AppSize {
   static const double s26 = 26.0;
 }
 
+Widget heightBox10() => const SizedBox(
+      height: AppSize.s10,
+    );
 Widget heightBox20() => const SizedBox(
       height: AppSize.s20,
+    );
+
+Widget widthBox10() => const SizedBox(
+      width: AppSize.s10,
+    );
+Widget widthBox20() => const SizedBox(
+      width: AppSize.s20,
+    );
+Widget widthBox100() => const SizedBox(
+      width: 100.0,
     );
